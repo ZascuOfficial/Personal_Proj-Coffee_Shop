@@ -8,6 +8,11 @@
 /* Global
 ========================= */
 
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+}
+
 /* Typography
 ========================= */
 
