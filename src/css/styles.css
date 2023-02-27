@@ -2,6 +2,7 @@
   --primary-color: #FFFFFF;
   --secondary-color: rgba(255, 255, 255, 0.8);
   --accent-color: #FEDE59;
+  --accent-color-dark: rgba(254, 222, 89, 0.7);
   --black: #1A1918;
 }
 
@@ -46,6 +47,29 @@ a {
   font-weight: 300;
 }
 
+.hero-intro-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.hero-intro-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.hero-intro-description {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .hero-intro-heading {
+    font-size: 5rem;
+  }
+}
+
 /* Layout
 ========================= */
 
@@ -54,6 +78,8 @@ a {
 
 #hero-section {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background:
     linear-gradient(
       0deg,
@@ -124,5 +150,66 @@ a {
 
   .header {
     justify-content: space-between;
+  }
+}
+
+/** Hero Introduction */
+
+.hero-intro {
+  width: 88%;
+  max-width: 88rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-intro-subheading {
+  margin-bottom: .5em;
+  color: var(--secondary-color);
+}
+
+.hero-intro-heading {
+  margin-bottom: 2rem;
+}
+
+.hero-intro-description {
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+.hero-intro-cta-btn {
+  padding: 1rem;
+  background: var(--accent-color);
+  color: var(--black);
+}
+
+.hero-intro-cta-btn:hover {
+  background-color: var(--accent-color-dark);
+}
+
+.hero-intro-cta-btn:active {
+  background-color: var(--black);
+  color: var(--primary-color);
+}
+
+@media (min-width: 48em) {
+  .hero-intro-heading,
+  .hero-intro-description {
+    width: 60%;
+  }
+}
+
+@media (min-width: 60em) {
+  .hero-intro {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-intro-description {
+    width: 35%;
   }
 }
