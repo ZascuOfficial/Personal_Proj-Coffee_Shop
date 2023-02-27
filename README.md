@@ -4,9 +4,9 @@
 
 A hero section of a website for a fictional coffee shop called "Coffy".
 
-## 🖼️ [Live Preview Link](# "Not available")
+## 🖼️ [Live Preview Link](https://zascuofficial-coffy.netlify.app/ "The preview link")
 
-![Preview Image](# "Not available")
+![Preview Image](assets/img/preview.png "Not available")
 
 ## 💻 Technologies Used
 
